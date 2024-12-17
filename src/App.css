@@ -1,0 +1,116 @@
+body {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.app {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.app .checker {
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(217, 228, 228);
+  padding: 50px;
+  border-radius: 15px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+nav {
+  background-color: #007bff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  background-color: #1c5b9e;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+input {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 80%;
+  max-width: 300px;
+  font-size: large;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: large;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #333;
+}
+
+.message {
+  cursor: default;
+}
+
+.message.no-inputs-yet {
+  display: block;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.message.no-inputs-yet:hover {
+  opacity: 1;
+}
+
+.footer {
+  color: transparent;
+  transition: color 0.2s ease;
+  user-select: none;
+}
+
+.footer:hover {
+  color: #555;
+  cursor: default;
+}
