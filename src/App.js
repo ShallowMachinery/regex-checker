@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Rule1Page from "./Rule1Page";
 import Rule2Page from "./Rule2Page";
 import "./App.css";
 
 function App() {
+
+      useEffect(() => {
+          document.title = "RegEx Checker";
+      }, []);
+
   return (
     <Router>
       <div className="app">

@@ -14,7 +14,7 @@ function Rule1Page() {
     };
 
     useEffect(() => {
-        document.title = "Rule 1 | Regex CHecker";
+        document.title = "Rule 1 | RegEx Checker";
     }, []);
 
     return (
