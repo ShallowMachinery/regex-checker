@@ -67,6 +67,7 @@ input {
   width: 80%;
   max-width: 300px;
   font-size: large;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 button {
@@ -91,18 +92,37 @@ p {
 }
 
 .result {
+  border-radius: 10px;
+  border: 1px solid;
   cursor: default;
   margin: 2rem 0;
-}
-
-.result.no-inputs-yet {
-  display: block;
+  overflow: hidden;
+  max-height: 0;
   opacity: 0;
-  transition: opacity 0.2s ease;
+  transition: border-color 0.2s ease, background-color 0.2s ease, 
+              max-height 0.5s ease-out, opacity 0.5s ease;
 }
 
-.result.no-inputs-yet:hover {
+.result.expand {
+  max-height: 500px;
   opacity: 1;
+}
+
+.result .string {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.result.valid {
+  background-color: #c7e4ce;
+  border-color: #218838;
+  color: #218838;
+}
+
+.result.invalid {
+  background-color: #e4d8d8;
+  border-color: #882121;
 }
 
 .footer {

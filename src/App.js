@@ -13,7 +13,6 @@ function App() {
     <Router>
       <div className="app">
         <div className="checker">
-          <h1>Regex Checker</h1>
           <Routes>
             <Route path="/rule1" element={<Rule1Page />} />
             <Route path="/rule2" element={<Rule2Page />} />
