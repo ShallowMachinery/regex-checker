@@ -5,7 +5,6 @@ import Rule2Page from "./Rule2Page";
 import "./App.css";
 
 function App() {
-
       useEffect(() => {
           document.title = "RegEx Checker";
       }, []);

@@ -28,7 +28,7 @@ function Rule1Page() {
                 className="input-field"
             />
             <button onClick={handleSubmit} className="check-button">Check</button>
-            <div className={`message ${isValid !== null ? "" : "no-inputs-yet"}`}>
+            <div className={`result ${isValid !== null ? "" : "no-inputs-yet"}`}>
                 <p style={{ color: isValid ? 'green' : 'red' }}>{isValid !== null ? (isValid ? "✅ Valid String" : "❌ Invalid String") : "🛑 Please enter a string"}</p>
             </div>
         </div>

@@ -90,17 +90,18 @@ p {
   color: #333;
 }
 
-.message {
+.result {
   cursor: default;
+  margin: 2rem 0;
 }
 
-.message.no-inputs-yet {
+.result.no-inputs-yet {
   display: block;
   opacity: 0;
   transition: opacity 0.2s ease;
 }
 
-.message.no-inputs-yet:hover {
+.result.no-inputs-yet:hover {
   opacity: 1;
 }
 
@@ -113,4 +114,10 @@ p {
 .footer:hover {
   color: #555;
   cursor: default;
+}
+
+@media (max-width: 768px) {
+  .app .checker {
+    width: 70%;
+  }
 }
