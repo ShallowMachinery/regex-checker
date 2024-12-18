@@ -13,7 +13,7 @@ function Rule1Page() {
     };
 
     const handleCheck = () => {
-        const valid = checkRule1(input);
+        const valid = checkRule1(input.toLowerCase());
         setOutput(input);
         setIsValid(valid);
 
@@ -51,7 +51,7 @@ function Rule1Page() {
                 type="text"
                 placeholder="Enter a string"
                 value={input}
-                onChange={(e) => setInput(e.target.value.replace(/[^ab]/g, ""))}
+                onChange={(e) => setInput(e.target.value.replace(/[^abAB]/g, ""))}
                 onKeyDown={(e) => {
                     if (e.key === 'Enter') handleCheck();
                     if (e.key === 'Escape') {
